@@ -1,0 +1,107 @@
+/*
+ ============================================================================
+ Name        : TP.c
+ Author      : matias
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <limits.h>
+#include "ArrayEmployees.h"
+#define tam 2
+#define TRUE 0
+#define FALSE 1
+
+int main(void) {
+	setbuf(stdout, NULL);
+	int id = 0;
+	char  name[51];
+	char lastName[51];
+	float salary;
+	int sector;
+	int verificador;
+
+
+	Employee Lista[tam];
+	InicializarClientes(Lista,  tam);
+
+ int Opcion;
+ ElijaOpcion();
+do{
+
+scanf("%d",&Opcion);
+
+switch (Opcion) {
+
+
+	case 1:
+		id++;
+		do{
+			verificador = GetString("Ingrese su Nombre", "Escribalo Bien", name, 51);
+		}while(verificador==-1);
+
+		do{
+			verificador = GetString("Ingrese su Apellido","Escribalo Bien", lastName, 51);
+		}while(verificador==-1);
+
+		getNumeroFloat(&salary, "Ingrese su Salario");
+		getNumero(&sector, "Ingrese su Sector");
+
+
+		if(addEmployee(Lista, tam, id,  name, lastName, salary, sector) == TRUE ){
+			puts(" \n *se agrego correctamente* \n ");
+		}else{
+			puts("¡¡NOO se agrego correctamente");
+		}
+		 ElijaOpcion();
+		break;
+
+	case 2:
+
+
+		findEmployeeById(Lista,tam, id);
+
+		printEmployees(Lista, tam);
+		 ElijaOpcion();
+		break;
+
+	case 3:
+
+
+		findEmployeeById(Lista,tam, id);
+
+
+		break;
+	case 4:
+
+
+		removeEmployee(Lista,tam, id);
+
+		break;
+
+	case 5:
+		sortEmployees(Lista,tam, 1);
+		printEmployees(Lista, tam);
+
+		 Promedio(Lista,tam, id);
+		break;
+
+
+
+
+
+
+}
+
+puts("ERROR INGRESE CORRECTAMENTE");
+
+}while(Opcion<3);
+
+printf("Usted Ya relleno los %d tamaños",tam);
+	return EXIT_SUCCESS;
+}

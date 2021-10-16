@@ -1,0 +1,1160 @@
+19:49:23 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+19:54:44 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+In file included from ..\src\ArrayEmployees.c:10:
+..\src\ArrayEmployees.h:37:1: error: unterminated comment
+   37 | /*
+      | ^
+..\src\ArrayEmployees.c: In function 'printEmployees':
+..\src\ArrayEmployees.c:93:1: warning: control reaches end of non-void function [-Wreturn-type]
+   93 | }
+      | ^
+19:55:44 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+In file included from ..\src\ArrayEmployees.c:10:
+..\src\ArrayEmployees.h:36:1: error: unterminated comment
+   36 | /*
+      | ^
+19:55:57 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+..\src\TP N2.c: In function 'main':
+..\src\TP N2.c:63:2: error: duplicate case value
+   63 |  case 2:
+      |  ^~~~
+..\src\TP N2.c:59:2: note: previously used here
+   59 |  case 2:
+      |  ^~~~
+..\src\TP N2.c:65:5: warning: implicit declaration of function 'MostrarClientes' [-Wimplicit-function-declaration]
+   65 |     MostrarClientes(Lista, tam);
+      |     ^~~~~~~~~~~~~~~
+19:57:06 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:12:09 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+..\src\TP N2.c: In function 'main':
+..\src\TP N2.c:67:3: warning: implicit declaration of function 'findEmployeeById' [-Wimplicit-function-declaration]
+   67 |   findEmployeeById(Lista,tam, id);
+      |   ^~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'findEmployeeById':
+..\src\ArrayEmployees.c:111:13: warning: passing argument 1 of 'getNumero' makes pointer from integer without a cast [-Wint-conversion]
+  111 |   getNumero(id, "Ingrese el Id");
+      |             ^~
+      |             |
+      |             int
+In file included from ..\src\ArrayEmployees.c:10:
+..\src\ArrayEmployees.h:21:20: note: expected 'int *' but argument is of type 'int'
+   21 | int getNumero(int* pResultado, char mensaje[]);
+      |               ~~~~~^~~~~~~~~~
+..\src\ArrayEmployees.c:125:28: error: incompatible type for argument 1 of 'getNumeroFloat'
+  125 |      getNumeroFloat(list[i].salary, "Ingrese El nuevo Salario");
+      |                     ~~~~~~~^~~~~~~
+      |                            |
+      |                            float
+In file included from ..\src\ArrayEmployees.c:10:
+..\src\ArrayEmployees.h:24:29: note: expected 'float *' but argument is of type 'float'
+   24 | float getNumeroFloat(float* pResultado, char mensaje[]);
+      |                      ~~~~~~~^~~~~~~~~~
+..\src\ArrayEmployees.c:129:23: warning: passing argument 1 of 'getNumero' makes pointer from integer without a cast [-Wint-conversion]
+  129 |      getNumero(list[i].sector, "Ingrese El nuevo Sector");
+      |                ~~~~~~~^~~~~~~
+      |                       |
+      |                       int
+In file included from ..\src\ArrayEmployees.c:10:
+..\src\ArrayEmployees.h:21:20: note: expected 'int *' but argument is of type 'int'
+   21 | int getNumero(int* pResultado, char mensaje[]);
+      |               ~~~~~^~~~~~~~~~
+..\src\ArrayEmployees.c:141:9: warning: returning 'void *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+  141 |  return NULL;
+      |         ^~~~
+20:12:36 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'findEmployeeById':
+..\src\ArrayEmployees.c:141:9: warning: returning 'void *' from a function with return type 'int' makes integer from pointer without a cast [-Wint-conversion]
+  141 |  return NULL;
+      |         ^~~~
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:13:00 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:13:03 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+20:14:16 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:14:18 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+20:14:42 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:14:44 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+20:15:39 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:15:41 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+20:16:55 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'findEmployeeById':
+..\src\ArrayEmployees.c:120:13: warning: passing argument 1 of 'strcpy' makes pointer from integer without a cast [-Wint-conversion]
+  120 |      strcpy(GetString("Ingrese el Nuevo Nombre", list[i].name, 51));
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |             |
+      |             int
+In file included from ..\src\ArrayEmployees.c:7:
+c:\mingw\x86_64-w64-mingw32\include\string.h:61:18: note: expected 'char * restrict' but argument is of type 'int'
+   61 |   char * __cdecl strcpy(char * __restrict__ _Dest,const char * __restrict__ _Source);
+      |                  ^~~~~~
+..\src\ArrayEmployees.c:120:6: error: too few arguments to function 'strcpy'
+  120 |      strcpy(GetString("Ingrese el Nuevo Nombre", list[i].name, 51));
+      |      ^~~~~~
+In file included from ..\src\ArrayEmployees.c:7:
+c:\mingw\x86_64-w64-mingw32\include\string.h:61:18: note: declared here
+   61 |   char * __cdecl strcpy(char * __restrict__ _Dest,const char * __restrict__ _Source);
+      |                  ^~~~~~
+20:17:15 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'findEmployeeById':
+..\src\ArrayEmployees.c:120:41: error: too few arguments to function 'strcpy'
+  120 |     GetString("Ingrese el Nuevo Nombre",strcpy( list[i].name), 51);
+      |                                         ^~~~~~
+In file included from ..\src\ArrayEmployees.c:7:
+c:\mingw\x86_64-w64-mingw32\include\string.h:61:18: note: declared here
+   61 |   char * __cdecl strcpy(char * __restrict__ _Dest,const char * __restrict__ _Source);
+      |                  ^~~~~~
+20:19:47 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:19:50 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+20:22:58 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+..\src\TP N2.c: In function 'main':
+..\src\TP N2.c:68:3: warning: implicit declaration of function 'findEmployeeById' [-Wimplicit-function-declaration]
+   68 |   findEmployeeById(Lista,tam, id);
+      |   ^~~~~~~~~~~~~~~~
+..\src\TP N2.c:39:1: warning: statement will never be executed [-Wswitch-unreachable]
+   39 | ElijaOpcion();
+      | ^~~~~~~~~~~~~
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:23:19 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+..\src\TP N2.c: In function 'main':
+..\src\TP N2.c:68:3: warning: implicit declaration of function 'findEmployeeById' [-Wimplicit-function-declaration]
+   68 |   findEmployeeById(Lista,tam, id);
+      |   ^~~~~~~~~~~~~~~~
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:24:19 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:25:40 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:25:42 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+20:28:59 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+..\src\TP N2.c: In function 'main':
+..\src\TP N2.c:69:3: warning: implicit declaration of function 'findEmployeeById' [-Wimplicit-function-declaration]
+   69 |   findEmployeeById(Lista,tam, id);
+      |   ^~~~~~~~~~~~~~~~
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:29:00 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+20:30:04 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+..\src\TP N2.c: In function 'main':
+..\src\TP N2.c:69:3: warning: implicit declaration of function 'findEmployeeById' [-Wimplicit-function-declaration]
+   69 |   findEmployeeById(Lista,tam, id);
+      |   ^~~~~~~~~~~~~~~~
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+20:33:22 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'findEmployeeById':
+..\src\ArrayEmployees.c:138:14: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'double' [-Wformat=]
+  138 |      scanf("%f",list[i].salary);
+      |             ~^  ~~~~~~~~~~~~~~
+      |              |         |
+      |              float *   double
+..\src\ArrayEmployees.c:138:14: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'double' [-Wformat=]
+..\src\ArrayEmployees.c:144:6: error: too many arguments to function 'gets'
+  144 |      gets("%d",list[i].sector);
+      |      ^~~~
+In file included from ..\src\ArrayEmployees.c:5:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:502:17: note: declared here
+  502 |   char *__cdecl gets(char *_Buffer) __MINGW_ATTRIB_DEPRECATED_SEC_WARN;
+      |                 ^~~~
+..\src\ArrayEmployees.c:110:6: warning: unused variable 'sector' [-Wunused-variable]
+  110 |  int sector;
+      |      ^~~~~~
+..\src\ArrayEmployees.c:109:8: warning: unused variable 'salario' [-Wunused-variable]
+  109 |  float salario;
+      |        ^~~~~~~
+..\src\ArrayEmployees.c:108:7: warning: unused variable 'apellido' [-Wunused-variable]
+  108 |  char apellido[51];
+      |       ^~~~~~~~
+..\src\ArrayEmployees.c:107:7: warning: unused variable 'name' [-Wunused-variable]
+  107 |  char name [51];
+      |       ^~~~
+20:33:34 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'findEmployeeById':
+..\src\ArrayEmployees.c:144:6: error: too many arguments to function 'gets'
+  144 |      gets("%d",&list[i].sector);
+      |      ^~~~
+In file included from ..\src\ArrayEmployees.c:5:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:502:17: note: declared here
+  502 |   char *__cdecl gets(char *_Buffer) __MINGW_ATTRIB_DEPRECATED_SEC_WARN;
+      |                 ^~~~
+..\src\ArrayEmployees.c:110:6: warning: unused variable 'sector' [-Wunused-variable]
+  110 |  int sector;
+      |      ^~~~~~
+..\src\ArrayEmployees.c:109:8: warning: unused variable 'salario' [-Wunused-variable]
+  109 |  float salario;
+      |        ^~~~~~~
+..\src\ArrayEmployees.c:108:7: warning: unused variable 'apellido' [-Wunused-variable]
+  108 |  char apellido[51];
+      |       ^~~~~~~~
+..\src\ArrayEmployees.c:107:7: warning: unused variable 'name' [-Wunused-variable]
+  107 |  char name [51];
+      |       ^~~~
+20:33:43 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'findEmployeeById':
+..\src\ArrayEmployees.c:110:6: warning: unused variable 'sector' [-Wunused-variable]
+  110 |  int sector;
+      |      ^~~~~~
+..\src\ArrayEmployees.c:109:8: warning: unused variable 'salario' [-Wunused-variable]
+  109 |  float salario;
+      |        ^~~~~~~
+..\src\ArrayEmployees.c:108:7: warning: unused variable 'apellido' [-Wunused-variable]
+  108 |  char apellido[51];
+      |       ^~~~~~~~
+..\src\ArrayEmployees.c:107:7: warning: unused variable 'name' [-Wunused-variable]
+  107 |  char name [51];
+      |       ^~~~
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:33:49 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:33:50 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+20:34:28 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:34:29 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+20:35:01 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:35:07 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:35:08 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+20:37:34 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:37:38 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+20:38:16 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+..\src\TP N2.c: In function 'main':
+..\src\TP N2.c:69:3: warning: implicit declaration of function 'findEmployeeById' [-Wimplicit-function-declaration]
+   69 |   findEmployeeById(Lista,tam, id);
+      |   ^~~~~~~~~~~~~~~~
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:38:17 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+20:57:37 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:05:07 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'removeEmployee':
+..\src\ArrayEmployees.c:171:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+  171 |   scanf("%d",Opcion);
+      |          ~^  ~~~~~~
+      |           |  |
+      |           |  int
+      |           int *
+..\src\ArrayEmployees.c:171:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+..\src\ArrayEmployees.c:171:3: warning: 'Opcion' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  171 |   scanf("%d",Opcion);
+      |   ^~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:05:16 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:05:19 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+21:08:00 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+23:12:38 **** Rebuild of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+23:23:20 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+23:48:44 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c:197:5: error: redefinition of 'sortEmployees'
+  197 | int sortEmployees(Employee* list, int len, int order)
+      |     ^~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:10:
+..\src\ArrayEmployees.h:40:5: note: previous definition of 'sortEmployees' was here
+   40 | int sortEmployees(Employee* list, int len, int order)
+      |     ^~~~~~~~~~~~~
+..\src\ArrayEmployees.c: In function 'sortEmployees':
+..\src\ArrayEmployees.c:208:13: error: incompatible types when assigning to type 'int' from type 'Employee' {aka 'struct <anonymous>'}
+  208 |       aux = list[i];
+      |             ^~~~
+..\src\ArrayEmployees.c:210:17: error: incompatible types when assigning to type 'Employee' {aka 'struct <anonymous>'} from type 'int'
+  210 |       list[j] = aux;
+      |                 ^~~
+23:49:18 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'sortEmployees':
+..\src\ArrayEmployees.c:208:13: error: incompatible types when assigning to type 'int' from type 'Employee' {aka 'struct <anonymous>'}
+  208 |       aux = list[i];
+      |             ^~~~
+..\src\ArrayEmployees.c:210:17: error: incompatible types when assigning to type 'Employee' {aka 'struct <anonymous>'} from type 'int'
+  210 |       list[j] = aux;
+      |                 ^~~
+23:50:17 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:50:20 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+23:52:39 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:52:43 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+23:53:37 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+Info: Nothing to build for TP N2
+Info: Nothing to build for TP N2
+Info: Nothing to build for TP N2
+00:13:00 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'sortEmployees':
+..\src\ArrayEmployees.c:200:6: warning: unused variable 'Opcion' [-Wunused-variable]
+  200 |  int Opcion;
+      |      ^~~~~~
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+01:24:22 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:24:25 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+01:25:38 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+01:28:58 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'Promedio':
+..\src\ArrayEmployees.c:254:63: error: 'cotador' undeclared (first use in this function); did you mean 'contador'?
+  254 |  printf("La cantidad que supera el salario promedio es de %d",cotador);
+      |                                                               ^~~~~~~
+      |                                                               contador
+..\src\ArrayEmployees.c:254:63: note: each undeclared identifier is reported only once for each function it appears in
+01:29:04 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'Promedio':
+..\src\ArrayEmployees.c:254:63: error: 'ccotador' undeclared (first use in this function); did you mean 'contador'?
+  254 |  printf("La cantidad que supera el salario promedio es de %d",ccotador);
+      |                                                               ^~~~~~~~
+      |                                                               contador
+..\src\ArrayEmployees.c:254:63: note: each undeclared identifier is reported only once for each function it appears in
+01:29:18 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+01:30:27 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+15:26:35 **** Rebuild of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+15:27:35 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+..\src\Inputs.c:8:5: error: conflicting types for 'GetString'
+    8 | int GetString(char mensaje[],char mensajeError[], char cadena[], int tam) {
+      |     ^~~~~~~~~
+In file included from ..\src\Inputs.c:7:
+..\src\ArrayEmployees.h:35:5: note: previous declaration of 'GetString' was here
+   35 | int GetString(char mensaje[], char cadena[], int tam);
+      |     ^~~~~~~~~
+15:27:38 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+..\src\Inputs.c:8:5: error: conflicting types for 'GetString'
+    8 | int GetString(char mensaje[],char mensajeError[], char cadena[], int tam) {
+      |     ^~~~~~~~~
+In file included from ..\src\Inputs.c:7:
+..\src\ArrayEmployees.h:35:5: note: previous declaration of 'GetString' was here
+   35 | int GetString(char mensaje[], char cadena[], int tam);
+      |     ^~~~~~~~~
+15:28:08 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+..\src\Inputs.c: In function 'GetString':
+..\src\Inputs.c:8:75: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+    8 | int GetString(char mensaje[],char mensajeError[], char cadena[], int tam) {
+      |                                                                           ^
+..\src\Inputs.c:32:27: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   32 | int esString(char* cadena){
+      |                           ^
+..\src\Inputs.c:47:47: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   47 | int getNumero(int* pResultado, char mensaje[]){
+      |                                               ^
+..\src\Inputs.c:67:28: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   67 | int getInt(int* pResultado){
+      |                            ^
+..\src\Inputs.c:81:29: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   81 | int esNumerica(char* cadena){
+      |                             ^
+..\src\Inputs.c:100:56: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  100 | float getNumeroFloat(float* pResultado, char mensaje[]){
+      |                                                        ^
+..\src\Inputs.c:119:32: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  119 | int getFloat(float* pResultado){
+      |                                ^
+..\src\Inputs.c:133:34: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  133 | int esNumericaFloat(char* cadena){
+      |                                  ^
+In file included from ..\src\Inputs.c:7:
+..\src\ArrayEmployees.h:30:5: error: old-style parameter declarations in prototyped function definition
+   30 | int GetString(char mensaje[],char mensajeError[], char cadena[], int tam)
+      |     ^~~~~~~~~
+..\src\Inputs.c:152: error: expected '{' at end of input
+  152 | }
+      | 
+..\src\Inputs.c:152:1: warning: control reaches end of non-void function [-Wreturn-type]
+  152 | }
+      | ^
+15:28:27 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'findEmployeeById':
+..\src\ArrayEmployees.c:127:49: warning: passing argument 3 of 'GetString' makes pointer from integer without a cast [-Wint-conversion]
+  127 |      GetString("Ingrese el Nuevo Nombre", name, 51);
+      |                                                 ^~
+      |                                                 |
+      |                                                 int
+In file included from ..\src\ArrayEmployees.c:10:
+..\src\ArrayEmployees.h:30:56: note: expected 'char *' but argument is of type 'int'
+   30 | int GetString(char mensaje[],char mensajeError[], char cadena[], int tam);
+      |                                                   ~~~~~^~~~~~~~
+..\src\ArrayEmployees.c:127:6: error: too few arguments to function 'GetString'
+  127 |      GetString("Ingrese el Nuevo Nombre", name, 51);
+      |      ^~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:10:
+..\src\ArrayEmployees.h:30:5: note: declared here
+   30 | int GetString(char mensaje[],char mensajeError[], char cadena[], int tam);
+      |     ^~~~~~~~~
+..\src\ArrayEmployees.c:132:55: warning: passing argument 3 of 'GetString' makes pointer from integer without a cast [-Wint-conversion]
+  132 |      GetString("Ingrese el Nuevo Apellido", apellido, 51);
+      |                                                       ^~
+      |                                                       |
+      |                                                       int
+In file included from ..\src\ArrayEmployees.c:10:
+..\src\ArrayEmployees.h:30:56: note: expected 'char *' but argument is of type 'int'
+   30 | int GetString(char mensaje[],char mensajeError[], char cadena[], int tam);
+      |                                                   ~~~~~^~~~~~~~
+..\src\ArrayEmployees.c:132:6: error: too few arguments to function 'GetString'
+  132 |      GetString("Ingrese el Nuevo Apellido", apellido, 51);
+      |      ^~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:10:
+..\src\ArrayEmployees.h:30:5: note: declared here
+   30 | int GetString(char mensaje[],char mensajeError[], char cadena[], int tam);
+      |     ^~~~~~~~~
+15:29:02 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'findEmployeeById':
+..\src\ArrayEmployees.c:127:49: warning: passing argument 3 of 'GetString' makes pointer from integer without a cast [-Wint-conversion]
+  127 |      GetString("Ingrese el Nuevo Nombre", name, 51);
+      |                                                 ^~
+      |                                                 |
+      |                                                 int
+In file included from ..\src\ArrayEmployees.c:10:
+..\src\ArrayEmployees.h:30:56: note: expected 'char *' but argument is of type 'int'
+   30 | int GetString(char mensaje[],char mensajeError[], char cadena[], int tam);
+      |                                                   ~~~~~^~~~~~~~
+..\src\ArrayEmployees.c:127:6: error: too few arguments to function 'GetString'
+  127 |      GetString("Ingrese el Nuevo Nombre", name, 51);
+      |      ^~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:10:
+..\src\ArrayEmployees.h:30:5: note: declared here
+   30 | int GetString(char mensaje[],char mensajeError[], char cadena[], int tam);
+      |     ^~~~~~~~~
+..\src\ArrayEmployees.c:132:55: warning: passing argument 3 of 'GetString' makes pointer from integer without a cast [-Wint-conversion]
+  132 |      GetString("Ingrese el Nuevo Apellido", apellido, 51);
+      |                                                       ^~
+      |                                                       |
+      |                                                       int
+In file included from ..\src\ArrayEmployees.c:10:
+..\src\ArrayEmployees.h:30:56: note: expected 'char *' but argument is of type 'int'
+   30 | int GetString(char mensaje[],char mensajeError[], char cadena[], int tam);
+      |                                                   ~~~~~^~~~~~~~
+..\src\ArrayEmployees.c:132:6: error: too few arguments to function 'GetString'
+  132 |      GetString("Ingrese el Nuevo Apellido", apellido, 51);
+      |      ^~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:10:
+..\src\ArrayEmployees.h:30:5: note: declared here
+   30 | int GetString(char mensaje[],char mensajeError[], char cadena[], int tam);
+      |     ^~~~~~~~~
+15:29:48 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+15:31:50 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:31:52 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+15:32:11 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+15:34:12 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+..\src\TP N2.c: In function 'main':
+..\src\TP N2.c:76:3: error: too few arguments to function 'findEmployeeById'
+   76 |   findEmployeeById(Lista,tam, id);
+      |   ^~~~~~~~~~~~~~~~
+In file included from ..\src\TP N2.c:15:
+..\src\ArrayEmployees.h:36:5: note: declared here
+   36 | int findEmployeeById(Employee* list, int len,int id,int verificador);
+      |     ^~~~~~~~~~~~~~~~
+15:34:20 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:34:25 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+18:05:44 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+..\src\Inputs.c: In function 'getInt':
+..\src\Inputs.c:75:5: warning: implicit declaration of function 'esNumerica' [-Wimplicit-function-declaration]
+   75 |  if(esNumerica(auxiliarIngresado)){
+      |     ^~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:14:15 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:14:27 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+18:14:40 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:14:41 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+18:17:54 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+..\src\TP N2.c: In function 'main':
+..\src\TP N2.c:41:11: warning: statement will never be executed [-Wswitch-unreachable]
+   41 | if(Opcion ==1 || Opcion ==2 ||Opcion ==3 ||Opcion ==4 ||Opcion ==5 ){
+      |    ~~~~~~~^~~
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:17:55 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+18:18:25 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+..\src\TP N2.c: In function 'main':
+..\src\TP N2.c:41:11: warning: comparison between pointer and integer
+   41 | if(Opcion == "1" || Opcion =="2" ||Opcion =="3" ||Opcion =="4" || Opcion =="5" ){
+      |           ^~
+..\src\TP N2.c:41:11: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\TP N2.c:41:28: warning: comparison between pointer and integer
+   41 | if(Opcion == "1" || Opcion =="2" ||Opcion =="3" ||Opcion =="4" || Opcion =="5" ){
+      |                            ^~
+..\src\TP N2.c:41:28: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\TP N2.c:41:43: warning: comparison between pointer and integer
+   41 | if(Opcion == "1" || Opcion =="2" ||Opcion =="3" ||Opcion =="4" || Opcion =="5" ){
+      |                                           ^~
+..\src\TP N2.c:41:43: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\TP N2.c:41:58: warning: comparison between pointer and integer
+   41 | if(Opcion == "1" || Opcion =="2" ||Opcion =="3" ||Opcion =="4" || Opcion =="5" ){
+      |                                                          ^~
+..\src\TP N2.c:41:58: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\TP N2.c:41:74: warning: comparison between pointer and integer
+   41 | if(Opcion == "1" || Opcion =="2" ||Opcion =="3" ||Opcion =="4" || Opcion =="5" ){
+      |                                                                          ^~
+..\src\TP N2.c:41:74: warning: comparison with string literal results in unspecified behavior [-Waddress]
+..\src\TP N2.c:41:11: warning: statement will never be executed [-Wswitch-unreachable]
+   41 | if(Opcion == "1" || Opcion =="2" ||Opcion =="3" ||Opcion =="4" || Opcion =="5" ){
+      |    ~~~~~~~^~~~~~
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:18:54 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+..\src\TP N2.c: In function 'main':
+..\src\TP N2.c:41:11: warning: statement will never be executed [-Wswitch-unreachable]
+   41 | if(Opcion == 1 || Opcion ==2 ||Opcion ==3 ||Opcion ==4 || Opcion ==5 ){
+      |    ~~~~~~~^~~~
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:19:31 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:19:47 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:19:49 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+18:20:49 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:21:57 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:21:59 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+18:22:54 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:24:18 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c:107:5: error: conflicting types for 'findEmployeeById'
+  107 | int findEmployeeById(Employee* list, int len,int id){
+      |     ^~~~~~~~~~~~~~~~
+In file included from ..\src\ArrayEmployees.c:10:
+..\src\ArrayEmployees.h:114:5: note: previous declaration of 'findEmployeeById' was here
+  114 | int findEmployeeById(Employee* list, int len,int id,int verificador);
+      |     ^~~~~~~~~~~~~~~~
+18:24:31 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Inputs.o" "..\\src\\Inputs.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:25:18 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:25:20 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:25:20 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+18:26:08 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+..\src\TP N2.c: In function 'main':
+..\src\TP N2.c:105:1: error: too many arguments to function 'puts'
+  105 | puts("Usted Ya relleno los %d tamaños",tam);
+      | ^~~~
+In file included from ..\src\TP N2.c:11:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:516:15: note: declared here
+  516 |   int __cdecl puts(const char *_Str);
+      |               ^~~~
+18:26:16 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:26:18 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+18:27:24 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+18:27:43 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+18:28:32 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+..\src\TP N2.c: In function 'main':
+..\src\TP N2.c:100:15: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  100 | if(Opcion != 1,2,3,4,5){
+      |               ^
+..\src\TP N2.c:100:17: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  100 | if(Opcion != 1,2,3,4,5){
+      |                 ^
+..\src\TP N2.c:100:19: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  100 | if(Opcion != 1,2,3,4,5){
+      |                   ^
+..\src\TP N2.c:100:21: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+  100 | if(Opcion != 1,2,3,4,5){
+      |                     ^
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:29:04 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:29:06 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+18:29:40 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+18:30:42 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+18:31:29 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+18:31:38 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+18:33:00 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+18:37:19 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:37:20 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+18:37:54 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:38:27 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:38:42 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+19:21:50 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+19:22:38 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:22:40 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+19:23:19 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:23:21 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+19:23:33 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+19:24:06 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:24:07 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+19:24:21 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:24:23 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+19:24:53 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:24:54 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+19:25:42 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'printEmployees':
+..\src\ArrayEmployees.c:93:45: error: expected ';' before 'printf'
+   93 |    puts("ID NOMBRE APELLIDO SALARIO SECTOR")
+      |                                             ^
+      |                                             ;
+   94 |    printf(" %d ",list[i].id);
+      |    ~~~~~~                                    
+19:25:49 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:25:50 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+19:26:10 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:26:12 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+19:26:27 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:26:28 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+19:26:45 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:26:46 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+19:26:59 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:27:01 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+19:27:19 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:27:21 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+Info: Nothing to build for TP N2
+19:29:11 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'Promedio':
+..\src\ArrayEmployees.c:267:58: error: expected ';' before '}' token
+  267 |  puts("------------------------------------------------")
+      |                                                          ^
+      |                                                          ;
+  268 |  }
+      |  ~                                                        
+19:29:12 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'Promedio':
+..\src\ArrayEmployees.c:267:58: error: expected ';' before '}' token
+  267 |  puts("------------------------------------------------")
+      |                                                          ^
+      |                                                          ;
+  268 |  }
+      |  ~                                                        
+19:29:18 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+19:29:48 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:29:50 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:29:51 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+19:30:10 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:30:11 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+19:32:22 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:32:23 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+19:32:58 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file TP N2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:32:59 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+19:33:08 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 
+Info: Nothing to build for TP N2
+19:40:20 **** Incremental Build of configuration Debug for project TP N2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP N2.o" "..\\src\\TP N2.c" 
+gcc -o "TP N2.exe" "src\\ArrayEmployees.o" "src\\Inputs.o" "src\\TP N2.o" 

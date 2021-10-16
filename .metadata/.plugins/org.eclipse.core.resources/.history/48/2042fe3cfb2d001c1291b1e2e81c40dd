@@ -1,0 +1,52 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#ifndef ARRAYEMPLOYEES_H_
+#define ARRAYEMPLOYEES_H_
+#endif /* ARRAYEMPLOYEES_H_ */
+
+
+struct
+{
+ int id;
+ char name[51];
+ char lastName[51];
+ float salary;
+ int sector;
+ int isEmpty;
+}typedef Employee;
+
+void ElijaOpcion(void);
+
+void IngresarCliente(int *id, char *name[],char *lastName[],float *salary,int *sector);
+
+int initEmployees(Employee* list, int len);
+
+int addEmployee(Employee* list, int len, int id, char name[],char lastName[],float salary,int sector, int validar);
+
+void MostrarClientes(Employee* list, int len);
+
+/*
+
+int findEmployeeById(Employee* list, int len,int id)
+{
+ return NULL;
+}
+
+int removeEmployee(Employee* list, int len, int id)
+{
+ return -1;
+}
+
+int sortEmployees(Employee* list, int len, int order)
+{
+ return 0;
+}
+
+
+int printEmployees(Employee* list, int length)
+{
+ return 0;
+}
+  */

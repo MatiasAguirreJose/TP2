@@ -1,0 +1,61 @@
+/*
+ ============================================================================
+ Name        : TP.c
+ Author      : matias
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <limits.h>
+#include "ArrayEmployees.h"
+#define tam 10
+
+int main(void) {
+	int id = 0;
+	char  name[51];
+	char lastName[51];
+	float salary=0;
+	int sector=0;
+	int Opcion;
+	int validar;
+	Employee Lista[tam];
+
+	ElijaOpcion();
+
+
+
+	validar = initEmployees(Lista, tam);
+do	{
+scanf("%d",&Opcion);
+switch (Opcion) {
+
+	case 1:
+		id++;
+		IngresarCliente( name, lastName, salary, sector);
+		addEmployee(Lista, tam, id,  name, lastName, salary, sector,  validar);
+
+
+		break;
+
+	case 2:
+		 MostrarClientes(Lista, tam);
+			break;
+
+	case 3:
+
+			break;
+
+}
+
+
+
+
+
+} while(Opcion !=11);
+	return EXIT_SUCCESS;
+}

@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <limits.h>
+#include <string.h>
+#include "input.h"
+#define T 1
+
+
+typedef struct {
+
+
+	int idProductos;
+	char descripcion[50];
+	int nacionalidad;
+	int tipo;
+	float precio;
+
+
+}eProducto;
+
+
+
+
+int main(void) {
+	setbuf(stdout, NULL);
+
+
+	eProducto miProducto [T];
+
+	for (int i = 0; i < T; ++i) {
+
+		miProducto[i].idProductos =  IngresarEntero("ingrese el IdProducto");
+		miProducto[i].nacionalidad =  IngresarEntero("ingrese la nacionalidad \n");
+		miProducto[i].tipo =  IngresarEntero ("ingrese el tipo\n");
+		miProducto[i].precio = IngresarFlotante("ingrese el precio");
+		getString(miProducto[i].descripcion, "ingrese un mensaje", 50);
+	}
+
+	for (int i = 0; i < T; ++i) {
+		printf("%d %d %d %f ",miProducto[i].idProductos,miProducto[i].nacionalidad,miProducto[i].tipo,miProducto[i].precio);
+
+	}
+
+
+	return EXIT_SUCCESS;
+}
+
+
+
+
+
+
+

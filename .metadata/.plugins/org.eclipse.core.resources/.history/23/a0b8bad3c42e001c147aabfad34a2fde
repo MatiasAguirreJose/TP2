@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <limits.h>
+#ifndef ARRAYEMPLOYEES_H_
+#define ARRAYEMPLOYEES_H_
+#endif /* ARRAYEMPLOYEES_H_ */
+
+
+struct
+{
+ int id;
+ char name[51];
+ char lastName[51];
+ float salary;
+ int sector;
+ int isEmpty;
+}typedef Employee;
+
+//-----------------------------------------------------------------------------------------
+int getNumero(int* pResultado, char mensaje[]);
+int getInt(int* pResultado);
+int esNumerica(char* cadena);
+float getNumeroFloat(float* pResultado, char mensaje[]);
+int getFloat(float* pResultado);
+int esNumericaFloat(char* cadena);
+int esString(char* cadena);
+//-----------------------------------------------------------------------------------------
+
+int GetString(char mensaje[],char mensajeError[], char cadena[], int tam);
+void ElijaOpcion(void);
+int InicializarClientes(Employee* list,  int tam);
+int addEmployee(Employee* list, int len, int id, char name[],char lastName[],float salary,int sector);
+int  printEmployees(Employee* list, int len);
+void Modificar(void);
+int findEmployeeById(Employee* list, int len,int id,int verificador);
+int removeEmployee(Employee* list, int len, int id);
+
+
+int sortEmployees(Employee* list, int len, int order);
+void Promedio(Employee* list, int len, int id);
+
+
+

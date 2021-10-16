@@ -1,0 +1,74 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <limits.h>
+#ifndef ARRAYEMPLOYEES_H_
+#define ARRAYEMPLOYEES_H_
+#endif /* ARRAYEMPLOYEES_H_ */
+
+
+struct
+{
+ int id;
+ char name[51];
+ char lastName[51];
+ float salary;
+ int sector;
+ int isEmpty;
+}typedef Employee;
+
+//-----------------------------------------------------------------------------------------
+/// \brief Se pide un char , se lo ingresa y valida si es un strig
+/// \param mensaje[] char
+/// \param entidad
+/// \return int Retorna si es false o true enm caso de false se repite
+int GetString(char mensaje[],char mensajeError[], char cadena[], int tam);
+
+
+
+int getInt(int* pResultado);
+
+
+
+/// \brief Se pide un numero flotante, se lo ingresa y valida
+/// \param har mensaje[]
+/// \param float* pResultado
+/// \return int Retorna un flotante
+float getNumeroFloat(float* pResultado, char mensaje[]);
+
+/// \brief verifica si no e sun string
+/// \param float* pResultado)
+/// \return int Retorna un entero
+int getFloat(float* pResultado);
+
+/// \brief Se pide un numero flotante, se lo ingresa y valida
+/// \param har mensaje[]
+/// \param float* pResultado
+/// \return int Retorna un flotante
+int esNumericaFloat(char* cadena);
+
+/// \brief valida si es un string
+/// \param int* pResultad
+/// \return int Retorna si es false o true
+int esString(char* cadena);
+
+int getNumero(int* pResultado, char mensaje[]);
+
+int GetString(char mensaje[],char mensajeError[], char cadena[], int tam);
+//-----------------------------------------------------------------------------------------
+
+
+void ElijaOpcion(void);
+int InicializarClientes(Employee* list,  int tam);
+int addEmployee(Employee* list, int len, int id, char name[],char lastName[],float salary,int sector);
+int  printEmployees(Employee* list, int len);
+void Modificar(void);
+int findEmployeeById(Employee* list, int len,int id,int verificador);
+int removeEmployee(Employee* list, int len, int id);
+
+
+int sortEmployees(Employee* list, int len, int order);
+void Promedio(Employee* list, int len, int id);
+
+
+
